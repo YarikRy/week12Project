@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debtor</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Debt List</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h3>Start Debt</h3>
+                <form>
+                    <label for="fullName" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" placeholder="John Smith" id="fullName" name="fullName">
+                    <label for="debtAmount" class="form-label">Debt Amount: </label>
+                    <input type="text" name="debt" id="debtAmount" class="form-control" placeholder="$12">
+                    <button class="btn btn-primary mt-3" id="sub-btn"></button>
+                </form>
+            </div>
+            <div class="col text-center">
+                <h3>Update Debt</h3>
+                <form>
+                    <label for="id-num" class="form-label">ID: </label>
+                    <input type="text" name="id" class="form-control" placeholder="1" id="id-num">
+                    <label for="fullNameUpdate" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" placeholder="John Smith" id="fullNameUpdate" name="fullName">
+                    <label for="debtOwed" class="form-label">Debt Owed:</label>
+                    <input type="text" name="payAmount" id="debtOwed" class="form-control" placeholder="$3">
+                    <button class="btn btn-success mt-3" id="updateBtn">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table mt-5">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Debt Owed</th>
+                        <th>Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody id="debt-table">
+
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
